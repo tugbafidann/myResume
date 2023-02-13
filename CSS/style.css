@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    font-size: 20px;
+}
+a {
+   text-decoration: none;
+}
+input, textarea{
+border: 3px solid rgb(134, 45, 134); /* kenarliklar icin  */
+border-radius: 8px;   /* kenarlari yuvarlamak icin */
+width: 100%;
+}
+button{
+border: 3px solid rgb(105, 20, 105);
+background-color: rgb(105, 20, 105) ;
+border-radius: 8px;
+font-size: 30px;
+color: rgb(231, 231, 212);
+}
+.header{ /*  baştaki kismi şekillendirmek icin  */
+    display: flex; /*  konumlarını ayarlamak icin */
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid rgb(134, 45, 134);
+    background-color: rgb(134, 45, 134);
+    border-radius: 30px;
+}
+.header .title{ 
+    display:  flex;  /*  isim ve test automation yan yana yazması için */
+    align-items: center; /*  alttan ustten hizalama yapmak icin */
+    gap: 20px; /*  yazıların aralarındaki boslugu ayarlamak icin  */
+}
+.content .about{
+    display: flex;  /* yazı ve fotoğraf yanyana */
+    align-items: center; /* yazı ortalandı */
+    width: 85%; /* yazın sayfaya göre %85 ini kaplasın  */
+    padding: 40px;  /* hizalama yapmak icin kullandık margin ile birlikte */
+    margin: 40px ;
+    gap: 30px; /* fotoğraf ve yazı arasını actı */
+}
+.content .about img{/* resim ayarları */
+    width: 400px;
+    height: 400px;
+    border: 5px solid rgb(134, 45, 134); /* resime kenarlık eklendi */
+    border-radius: 200px;  /*  tam yuvarlak yapmak icin width ve hegiht yarısını veriyoruz */
+    margin-left: 150px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column; /* elemanlar (education , work...) alt alta indirecek */
+    align-items: center; /* ortaladı */
+}
+.section {  /* cardların oldugu kisim */
+    width: 60%; /* yazı sayfanın %60 ı olsun */
+}
+
+.section .card{       /* kartları topluca sekillendiriyoruz */
+    display: flex;    /* sağ sol olarak ayarlıyoruz (x solition ve acıklamayı) */
+    border: 3px solid rgb(134, 45, 134) ;
+    border-radius: 30px;
+    padding: 40px;
+    margin: 40px;
+    box-shadow: 5px 5px 10px gray;  /* kenarlık gölgelendirmesi */
+    background-color: rgb(248, 184, 248);
+    
+}
+
+.section .card .left{  
+    flex: 2;
+}
+.section .card .right{
+    flex: 1;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around; /*  o satırda hepsini esit dağıtmak icin */
+    border-top: 3px dotted gray; /*  uste cizgi ve dotted(noktalı olacak) */
+
+}
+

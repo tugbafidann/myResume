@@ -1,0 +1,10 @@
+/* yorum satiri */
+
+h1{
+    text-align: center;
+    border: 5px solid green;
+    border-radius: 10px;
+    background-color: burlywood;
+    width: 60%;
+    box-shadow: 10px -10px 10px red;
+}
